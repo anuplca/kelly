@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kelly - Contact</title>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
+        <!--Bootstrap Css-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!--Box Icon CDN-->
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+        <!--Custom Css-->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!--header Start-->
+        <header>
+            <div>
+                <div class="header-wraper" id="myHeader">
+                <div class="navbar">
+                    <a href="index.html" class="navbar-brand">Kelly</a>
+                    <ul class="navbar nav">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
+                        <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="socal-icon">
+                        <a href="https://www.twitter.com"><i class="bx bxl-twitter"></i></a>
+                        <a href="https://www.facebook.com"><i class="bx bxl-facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://www.instagram.com"><i class="bx bxl-skype"></i></a>
+                        <a href="https://www.instagram.com"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                    <div class="toggle" onclick="toggle()"></div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <!--contact-block-->
+        <section class="contact-block bg">
+            <div class="container">
+                <div class="heading">
+                    <h2 class="head-title">Contact</h2>
+                    <p class="head-text">
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in
+                        iste officiis commodi quidem hic quas.
+                    </p>
+                </div>
+                <div class="map-block my-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.634726383632!2d88.66207721427914!3d22.852999828380586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8b1c5ba32e63f%3A0x2aeb814bf54d5c86!2sLearn%20Computer%20Academy!5e0!3m2!1sen!2sin!4v1607344715810!5m2!1sen!2sin"
+                        frameborder="0"
+                        allowfullscreen=""
+                        aria-hidden="false"
+                        tabindex="0"
+                    ></iframe>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="lf-side">
+                            <div class="items align-items-center">
+                                <div class="icon-block">
+                                    <i class="bx bxs-map mr-3"></i>
+                                </div>
+                                <div class="text-block">
+                                    <h3 class="items-title">Location</h3>
+                                    <p class="items-text">A108 Adam Street, New York, NY 535022</p>
+                                </div>
+                            </div>
+                            <div class="items align-items-center">
+                                <div class="icon-block">
+                                    <i class="bx bxs-envelope mr-3"></i>
+                                </div>
+                                <div class="text-block">
+                                    <h3 class="items-title">Email:</h3>
+                                    <p class="items-text"><a href="mailtto:info@example.com">info@example.com</a></p>
+                                </div>
+                            </div>
+                            <div class="items align-items-center">
+                                <div class="icon-block">
+                                    <i class="bx bxs-phone mr-3"></i>
+                                </div>
+                                <div class="text-block">
+                                    <h3 class="items-title">Call:</h3>
+                                    <p class="items-text"><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="ri-side">
+                            <form action="index.html" autocomplete="off">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label for="" class="sr-only">Your Name</label>
+                                        <input type="text" class="form-control" placeholder="Your Name" required />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="" class="sr-only">Your Email</label>
+                                        <input type="email" class="form-control" placeholder="Your Email" required />
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <label for="" class="sr-only">Subject</label>
+                                        <input type="text" class="form-control" placeholder="Subject" />
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <label for="" class="sr-only">Send Message</label>
+                                        <textarea spellcheck="false" class="form-control" placeholder="Send Message"></textarea>
+                                    </div>
+                                    <div class="input-btn m-auto">
+                                        <input type="submit" value="Send a Message" class="btn btn-primary" />
+                                    </div>
+                                </div>
+                                <!-- .row -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Copy-right Start-->
+        <!--Copy-right Start-->
+        <footer class="copy-right text-center py-3">
+            <p>&copy; Copyright <strong>Kelly</strong>. All Rights Reserved</p>
+            <p>Designed by <a href="#">Anupbanerjee</a></p>
+        </footer>
+
+        <script>
+            // Toggle
+            function toggle() {
+                var myHeader = document.getElementById("myHeader");
+                myHeader.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>

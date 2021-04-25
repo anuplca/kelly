@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kelly - Portfolio</title>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <!--Bootstrap Css-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!--Box Icon CDN-->
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+        <!--Custom Css-->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!--header Start-->
+        <header>
+            <div>
+                <div class="header-wraper" id="myHeader">
+                <div class="navbar">
+                    <a href="index.html" class="navbar-brand">Kelly</a>
+                    <ul class="navbar nav">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
+                        <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="socal-icon">
+                        <a href="https://www.twitter.com"><i class="bx bxl-twitter"></i></a>
+                        <a href="https://www.facebook.com"><i class="bx bxl-facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://www.instagram.com"><i class="bx bxl-skype"></i></a>
+                        <a href="https://www.instagram.com"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                    <div class="toggle" onclick="toggle()"></div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <!--portfolio Start-->
+        <section class="portfolio bg">
+            <div class="container">
+                <div class="heading">
+                    <h2 class="head-title">PORTFOLIO</h2>
+                    <p class="head-text">
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
+                        quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </p>
+                </div>
+
+                <div id="myBtnContainer" class="my-5">
+                    <button class="btn active" onclick="filterSelection('all')">ALL</button>
+                    <button class="btn" onclick="filterSelection('app')">APP</button>
+                    <button class="btn" onclick="filterSelection('card')">CARD</button>
+                    <button class="btn" onclick="filterSelection('web')">WEB</button>
+                </div>
+
+                <div class="images-block">
+                    <div class="img-block app">
+                        <img src="images/portfolio-1.jpg" alt="portfolio-img" class="img-fluid" />
+                    </div>
+                    <div class="img-block card">
+                        <img src="images/portfolio-2.jpg" alt="portfolio-img" class="img-fluid" />
+                    </div>
+                    <div class="img-block web">
+                        <img src="images/portfolio-3.jpg" alt="portfolio-img" class="img-fluid" />
+                    </div>
+                    <div class="img-block app">
+                        <img src="images/portfolio-4.jpg" alt="portfolio-img" class="img-fluid" />
+                    </div>
+                    <div class="img-block web">
+                        <img src="images/portfolio-5.jpg" alt="portfolio-img" class="img-fluid" />
+                    </div>
+                    <div class="img-block card">
+                        <img src="images/portfolio-6.jpg" alt="portfolio-img" class="img-fluid" />
+                    </div>
+                    <div class="img-block web">
+                        <img src="images/portfolio-7.jpg" alt="portfolio-img" class="img-fluid" />
+                    </div>
+                    <div class="img-block card">
+                        <img src="images/portfolio-8.jpg" alt="portfolio-img" class="img-fluid" />
+                    </div>
+                    <div class="img-block app">
+                        <img src="images/portfolio-9.jpg" alt="portfolio-img" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio end -->
+        <!--Copy-right Start-->
+        <footer class="copy-right text-center py-3">
+            <p>&copy; Copyright <strong>Kelly</strong>. All Rights Reserved</p>
+            <p>Designed by <a href="#">BootstrapMade</a></p>
+        </footer>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            filterSelection("all");
+
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("img-block");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+            }
+
+            function w3AddClass(element, name) {
+                let i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {
+                        element.className += " " + arr2[i];
+                    }
+                }
+            }
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (let i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    for (let j = 0; j < btns.length; j++) {
+                        btns[j].classList.remove("active");
+                    }
+                    btns[i].classList.add("active");
+                });
+            }
+        </script>
+        <script>
+            // Toggle
+            function toggle() {
+                var myHeader = document.getElementById("myHeader");
+                myHeader.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>

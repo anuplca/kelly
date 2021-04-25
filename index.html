@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kelly - Home</title>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600,700,800&display=swap" rel="stylesheet" />
+        <!--Bootstrap Css-->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!--Box Icon CDN-->
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+        <!--Custom Css-->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!--Banner Start-->
+        <div class="banner">
+            <!--BannerDesc Start-->
+            <div class="bannerDesc text-center">
+                <h1 class="banner-title">Kelly Adams</h1>
+                <p class="banner-text my-2">I'm a professional illustrator from San Francisco</p>
+                <a href="about.html" class="btn btn-primary mt-3">About Me</a>
+            </div>
+        </div>
+        <!--header Start-->
+        <header>
+            <div class="header-wraper" id="myHeader">
+                <div class="navbar">
+                    <a href="index.html" class="navbar-brand">Kelly</a>
+                    <ul class="navbar nav">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
+                        <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="socal-icon">
+                        <a href="https://www.twitter.com"><i class="bx bxl-twitter"></i></a>
+                        <a href="https://www.facebook.com"><i class="bx bxl-facebook"></i></a>
+                        <a href="https://www.instagram.com"><i class="bx bxl-instagram"></i></a>
+                        <a href="https://www.instagram.com"><i class="bx bxl-skype"></i></a>
+                        <a href="https://www.instagram.com"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                    <div class="toggle" onclick="toggle()"></div>
+                </div>
+            </div>
+        </header>
+        <!--Copy-right Start-->
+        <footer class="copy-right text-center py-3">
+            <p>&copy; Copyright <strong>Kelly</strong>. All Rights Reserved</p>
+            <p>Designed by <a href="#">Anupbanerjee</a></p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script>
+            // Toggle
+            function toggle() {
+                var myHeader = document.getElementById("myHeader");
+                myHeader.classList.toggle("active");
+            }
+        </script>
+    </body>
+</html>
